@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #02040a;
+  --surface: #060a14;
+  --foreground: #f8fafc;
+  --cyan-glow: #00f2ff;
+  --rose-glow: #f43f5e;
+  --emerald-glow: #10b981;
+  --amber-glow: #f59e0b;
+}
+
+body {
+  background-color: #02040a;
+  color: #f8fafc;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 242, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 100% 40%, rgba(244, 63, 94, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 0% 80%, rgba(16, 185, 129, 0.04) 0%, transparent 40%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Glassmorphism primitives */
+.glass-panel {
+  background: rgba(6, 10, 20, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 242, 255, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(0, 242, 255, 0.35);
+  box-shadow: 0 12px 36px -8px rgba(0, 242, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.glass-panel-danger {
+  background: rgba(20, 6, 10, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(244, 63, 94, 0.08);
+}
+
+.glass-panel-amber {
+  background: rgba(22, 14, 5, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(245, 158, 11, 0.08);
+}
+
+.glass-panel-emerald {
+  background: rgba(5, 20, 14, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(16, 185, 129, 0.08);
+}
+
+/* Neon glow texts & badges */
+.text-cyan-glow {
+  text-shadow: 0 0 16px rgba(0, 242, 255, 0.5);
+}
+
+.text-rose-glow {
+  text-shadow: 0 0 16px rgba(244, 63, 94, 0.5);
+}
+
+.text-emerald-glow {
+  text-shadow: 0 0 16px rgba(16, 185, 129, 0.5);
+}
+
+.glow-pill-cyan {
+  background: rgba(0, 242, 255, 0.1);
+  border: 1px solid rgba(0, 242, 255, 0.3);
+  color: #00f2ff;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #02040a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 242, 255, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 242, 255, 0.4);
+}
