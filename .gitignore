@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Model files (optional – remove these lines if you want to push models)
+# *.joblib
+# *.pkl
+# *.pickle
+
+# Data (optional – remove if you want CSVs in Git)
+# data/*.csv
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Logs & temp
+*.log
+*.tmp
+.cache/

@@ -1,0 +1,23 @@
+# Core data
+pandas==2.2.3
+numpy==1.26.4
+
+# Machine Learning
+scikit-learn==1.5.2
+joblib==1.4.2
+
+# Visualization (for notebooks + later GUI)
+matplotlib==3.9.2
+seaborn==0.13.2
+plotly==5.24.1
+
+# Notebooks
+jupyter==1.1.1
+ipykernel==6.29.5
+notebook==7.2.2
+
+# GUI (we will use this after models are ready)
+streamlit==1.39.0
+
+# Optional but useful
+openpyxl==3.1.5
